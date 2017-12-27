@@ -10,8 +10,34 @@
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
        .container {
-      padding: 80px 120px;
+        padding: 80px 120px;
   }
+  .person {
+      border: 10px solid transparent;
+      margin-bottom: 25px;
+      width: 80%;
+      height: 80%;
+      opacity: 0.7;
+  }
+  .person:hover {
+      border-color: #f1f1f1;
+  }
+  .navbar {
+   
+    margin-bottom: 0;
+    background-color:#2d2d30;
+    border: 0;
+    font-size: 11px !important;
+    letter-spacing: 4px;
+    opacity: 0.9;
+}
+.navbar li a, .navbar .navbar-brand { 
+    color: #d5d5d5 !important;
+}
+
+.navbar-nav li a:hover {
+    color: #fff !important;
+}
   
       .carousel-inner img {
       -webkit-filter: grayscale(70%);
@@ -26,63 +52,8 @@
     .carousel-caption {
       display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */
     }
-    .bg-1 {
-      background: #2d2d30;
-      color: #bdbdbd;
-    }
-    .bg-2{
-        background-color: #ffffff;
-        color: #555555;
-    }
-   
+    
   
-/* Add a dark background color with a little bit see-through */ 
-    .navbar-brand {
-        margin-bottom: 0;
-        background-color: #2d2d30;
-        border: 0;
-        font-size: 11px !important;
-        letter-spacing: 4px;
-        opacity:0.9;
-    }
-
-/* Add a gray color to all navbar links */
-.navbar li a, .navbar .navbar-brand { 
-    color: #d5d5d5 !important;
-}
-
-/* On hover, the links will turn white */
-.navbar-nav li a:hover {
-    color: #fff !important;
-}
-
-/* The active link */
-.navbar-nav li.active a {
-    color: #fff !important;
-    background-color:#29292c !important;
-}
-
-/* Remove border color from the collapsible button */
-.navbar-default .navbar-toggle {
-    border-color: transparent;
-}
-
-/* Dropdown */
-.open .dropdown-toggle {
-    color: #fff ;
-    background-color: #555 !important;
-}
-
-/* Dropdown links */
-.dropdown-menu li a {
-    color: #000 !important;
-}
-
-/* On hover, the dropdown links will turn red */
-.dropdown-menu li a:hover {
-    background-color: red !important;
-  
-}
 footer {
   background-color: #2d2d30;
   color: #f5f5f5;
@@ -95,10 +66,63 @@ footer a:hover {
   color: #777;
   text-decoration: none;
 }  
+
     </style>
+<style type="text/css">
+  *{
+    padding: 0px;
+    margin: 0px;
+
+  }
+  section{
+    margin: 50px auto;
+    width: 1025px;
+    height: 150px;
+  }
+  .rede{
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-left: 20px;
+    transition: all 0.4s ease-out;
+    border-radius: 60%;
+  }
+  .rede:hover{
+  cursor: pointer;
+  transform: translateY(-20px);
+  box-shadow: 4px 30px 16px 0px rgba(50, 50, 50, 0.45);
+  }
+  .rede#facebook{
+    background-color: #2372a3;
+  }
+  .rede#twitter{
+    background-color: #0084b4;
+  }
+  .rede#instagram{
+    background-color: #3f729b;
+  }
+  .rede#github{
+    background-color: #2d2d30;
+  }
+  .rede#linkedin{
+    background-color: #4e4e53;
+  }
+  .rede#gmail{
+    background-color: #b00;
+  }
+  .icone{
+    margin:0px auto;
+    padding: 35px;
+    width: 150px;
+  }
+  .fa{
+    margin:0px auto;
+    padding: 35px;
+    width: 150px;
+  }
+  </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
-
     <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -111,13 +135,14 @@ footer a:hover {
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#sobremim">Sobre mim</a></li>
+        <li><a href="#sobremim">Sobre mim </a></li>
         <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#contato">Contatos</a></li>
+        <li><a href="#contatos">Contato</a></li>
       </ul>
     </div>
   </div>
 </nav>
+  
 
               <div id="myCarousel" class="carousel slide" data-ride="carousel">
                   
@@ -162,9 +187,92 @@ footer a:hover {
 </div>
 <div id="sobremim" class="container-fluid bg-2 text-center">
         <h3>Sobre mim</h3>
-        <p>Estudande de Sistemas de Informação, Campus IV/Pb. Atualmente estou no quinto período e faço parte do projeto IT Girls (Garotas na tecnologia da informação). </p>
-       
+        <img src="imagem/eu.png" class="img-circle" alt="eu" width="350" height="350"><br>
+        <br>
+        <p>Estudande, atualmente no 5º período do curso de Sistemas de Informação, Campus IV/Pb. Curiosa pela programação participei da primeira edição da OIP (Olimpíada Interna de Programação) do campus iv, com meu time ganhando em primeiro lugar e nos anos seguintes participando na organização.<br>
+          <br>Participo do projeto IT Girls (Garotas na tecnologia da informação) e sou Analista Financeira da Eagles (Empresa Júnior da faculdade). </p>
+       </div>
+</div>
+ <div id="projetos" class="container-fluid bg-3 text-center">
+  <h3>Projetos</h3>
+  <p><em>Projetos que participo e participei no Campus IV.</em></p>
+  <br>
+
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="container-fluid bg-3 text-center"><strong>Primeira OIP</strong></p><br>
+      <a href="#demo" data-toggle="collapse">
+          <img src="imagem/primeiraolimpiada.jpg" class= "img-circle person" alt="Random Primeira OIP" width="255" height="255">
+        </a>
+      <div id="demo" class="collapse">
+        <p>Primeira Olimpiada Interna de Programação do Campus IV</p>
+        <p>Primeiro Lugar (time 3xtra)</p>
+        <p>Segundo Periodo de SI.</p>
+        </div>
     </div>
+
+    <div class="col-sm-4">
+      <p class="container-fluid bg-3 text-center"><strong>Segunda OIP</strong></p><br>
+      <a href="#demo2" data-toggle="collapse">
+      <img src="imagem/olimpiada.jpg"  class= "img-circle person" alt="Random Segunda OIP" width="255" height="255">
+    </a>
+    <div id="demo2" class="collapse">
+        <p>Segunda Olimpiada Interna de Programação do Campus IV</p>
+        <p>Equipe de Organização</p>
+        </div>
+    </div>
+  
+    
+    <div class="col-sm-4">
+      <p class="container-fluid bg-3 text-center"><strong>ITea Girls</strong></p><br>
+      <a href="#demo3" data-toggle="collapse">
+      <img src="imagem/itea.jpg" class= "img-circle person"  alt="Random ITea Girls" width="255" height="255">
+    </a>
+    <div id="demo3" class="collapse">
+        <p>IT girls | Projeto Campus IV que tem o intuito de trazer mais mulheres para a área de tecnologia.</p>
+        <p>4ª edição do ITea Girls | Chá da tarde que ocorre todo ano no aniversário do projeto.</p>
+        
+        </div>
+      </div>
+  </div>
+
+  <div id="contatos" class="container-fluid bg-4 text-center">
+      <h3>Contatos</h3>
+      <p> Você pode entrar em contato pelo email ou redes sociais abaixo.</p>
+      <section>
+        <div class="rede" id="facebook">
+          <img class="icone" src="imagem/facebook.png"/>
+          </div>
+          <div class="rede" id="twitter">
+          <img class="icone" src="imagem/twitter.png"/>
+          </div>
+          <div class="rede" id="instagram">
+          <img class="icone" src="imagem/instagram.png"/>
+          </div>
+          <div class="rede" id="github">
+          <img class="icone" src="imagem/GitHub-Mark-light-120px-plus.png"/>
+          </div>
+          <div class="rede" id="linkedin">
+          <img class="icone" src="imagem/linkedin.png"/>
+          </div>
+          <div class="rede" id="gmail">
+          <img class="icone" src="imagem/envelope.png"/>
+          </div>
+          
+          
+    </section>
+  
+
+
+  <footer class="page-footer red darken-4 z-depth-0 valign-wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="center-align">
+                        <a class="copyright" href="https://www.facebook.com/gabriela.andrade.334"> © Copyright 2017 - Gabriela Andrade </a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
     <footer class="text-center">
